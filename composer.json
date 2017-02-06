@@ -1,0 +1,25 @@
+{
+    "name": "paulschulleri/salaryculator",
+    "require": {
+        "php": ">=5.6.4",
+        "symfony/console": "^3.2",
+        "illuminate/container": "5.3.23",
+        "illuminate/support": "~5.0",
+        "illuminate/config": "~5.0",
+        "symfony/var-dumper": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Schulleri\\Salaryculator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paul Schulleri",
+            "email": "paul@schulleri.com"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Schulleri\Salaryculator\Commands\WriteCommand;
+use Illuminate\Container\Container;
+use Illuminate\Contracts\Container\Container as ContainerInterface;
+use Symfony\Component\Console\Application;
+
+$container = new Container();
+$container->instance(ContainerInterface::class, $container);
+$app = $container->make(Application::class, ['Salaryculator', '0.1']);
+$command = $container->make(WriteCommand::class);
+$app->add($command);
+$app->run();
