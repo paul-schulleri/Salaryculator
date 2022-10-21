@@ -66,6 +66,8 @@ class WriteCommand extends Command
         $app = $this->bootstrap->boot()->process($input);
 
         $output->writeln($this->getMessageFromResult($app->getResult()));
+
+        return 1;
     }
 
     /**

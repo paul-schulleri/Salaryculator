@@ -13,7 +13,7 @@ use Schulleri\Salaryculator\Services\Calendar\DateContainerInterface;
  */
 class CsvDriver implements DriverInterface
 {
-    const STORAGE_DIR = __DIR__ . '/../../../../storage/';
+    const STORAGE_DIR = __DIR__ . '/../../../../Storage/';
     const DATE_FORMAT_SALARY = 'Y/m/d D';
     const DATE_FORMAT_MONTH = 'Y/n (F)';
 

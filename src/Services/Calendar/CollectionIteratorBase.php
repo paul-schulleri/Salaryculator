@@ -19,7 +19,7 @@ abstract class CollectionIteratorBase implements Iterator
     /**
      *
      */
-    public function rewind()
+    public function rewind() :void
     {
         $this->position = 0;
     }
@@ -43,7 +43,7 @@ abstract class CollectionIteratorBase implements Iterator
     /**
      *
      */
-    public function next()
+    public function next(): void
     {
         ++$this->position;
     }
